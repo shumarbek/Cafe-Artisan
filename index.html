@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Artisan - Premium Coffee Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">☕</span>
+                    <span class="logo-text">Café Artisan</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="cta-button">Reserve Table</button>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Where Every Cup</span>
+                    <span class="title-line">Tells a Story</span>
+                </h1>
+                <p class="hero-subtitle">Experience the perfect blend of artisanal coffee, cozy ambiance, and exceptional service</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                    <a href="#about" class="btn btn-secondary">Our Story</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <img src="./image/cozy café interior.png" alt="">
+                    </div>
+                    <div class="about-badge">
+                        <span class="badge-year">Since 2018</span>
+                    </div>
+                </div>  
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Crafting Moments, One Cup at a Time</h2>
+                    <p class="about-text">Welcome to Café Artisan, where passion meets perfection. We source the finest beans from sustainable farms worldwide and roast them to perfection in-house.</p>
+                    <p class="about-text">Our skilled baristas are true coffee artisans, dedicated to creating the perfect cup every time. Whether you're here for a quick espresso or a leisurely afternoon, we promise an unforgettable experience.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <img src="./icon/leaf.png" alt="feature-icon">
+                            </div>
+                            <h3>100% Organic</h3>
+                            <p>Sustainably sourced beans</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <img src="./icon/barista.png" alt="feature-icon">
+                            </div>
+                            <h3>Expert Baristas</h3>
+                            <p>Trained coffee artisans</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <img src="./icon/trophy.png" alt="feature-icon">
+                            </div>
+                            <h3>Award Winning</h3>
+                            <p>Best café 2023 & 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Menu</span>
+                <h2 class="section-title">Signature Selections</h2>
+                <p class="section-description">Handcrafted beverages and artisanal treats</p>
+            </div>
+
+            <div class="menu-tabs">
+                <button class="tab-button active" data-tab="coffee">Coffee</button>
+                <button class="tab-button" data-tab="food">Food</button>
+                <button class="tab-button" data-tab="desserts">Desserts</button>
+            </div>
+
+            <div class="menu-content">
+                <!-- Coffee Menu -->
+                <div class="tab-content active" id="coffee">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Classic Espresso</h3>
+                                <span class="price">$4.50</span>
+                            </div>
+                            <p>Rich, bold shot of perfectly extracted espresso</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Cappuccino</h3>
+                                <span class="price">$5.50</span>
+                            </div>
+                            <p>Espresso with steamed milk and velvety foam</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Artisan Latte</h3>
+                                <span class="price">$6.00</span>
+                            </div>
+                            <p>Smooth espresso with artfully poured milk art</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Cold Brew</h3>
+                                <span class="price">$5.00</span>
+                            </div>
+                            <p>Slow-steeped for 24 hours, smooth and refreshing</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Mocha Delight</h3>
+                                <span class="price">$6.50</span>
+                            </div>
+                            <p>Espresso with chocolate and steamed milk</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Flat White</h3>
+                                <span class="price">$5.75</span>
+                            </div>
+                            <p>Double espresso with microfoam milk</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Food Menu -->
+                <div class="tab-content" id="food">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Avocado Toast</h3>
+                                <span class="price">$9.50</span>
+                            </div>
+                            <p>Sourdough with smashed avocado, poached egg, feta</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Breakfast Croissant</h3>
+                                <span class="price">$8.00</span>
+                            </div>
+                            <p>Butter croissant with ham, cheese, and scrambled eggs</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Quinoa Bowl</h3>
+                                <span class="price">$11.00</span>
+                            </div>
+                            <p>Roasted vegetables, quinoa, tahini dressing</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Club Sandwich</h3>
+                                <span class="price">$10.50</span>
+                            </div>
+                            <p>Triple-decker with chicken, bacon, lettuce, tomato</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts Menu -->
+                <div class="tab-content" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Chocolate Brownie</h3>
+                                <span class="price">$5.50</span>
+                            </div>
+                            <p>Rich, fudgy brownie with vanilla ice cream</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Lemon Tart</h3>
+                                <span class="price">$6.00</span>
+                            </div>
+                            <p>Tangy lemon custard in buttery pastry shell</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Tiramisu</h3>
+                                <span class="price">$7.00</span>
+                            </div>
+                            <p>Classic Italian dessert with espresso and mascarpone</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h3>Cheesecake</h3>
+                                <span class="price">$6.50</span>
+                            </div>
+                            <p>New York style with berry compote</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Gallery</span>
+                <h2 class="section-title">Moments at Café Artisan</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./image/Latte Art.webp" alt="">
+                    <text x="50%" y="50%" text-anchor="middle" fill="#fff" font-size="18">Latte Art</text>
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/Fresh Pastries.png" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/Coffee Beans.png" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/Café Interior.png" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/Barista at Work.png" alt="">
+                </div>
+                <div class="gallery-item">
+                    <img src="./image/Desserts.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-label">Get in Touch</span>
+                    <h2 class="section-title">Visit Us Today</h2>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>103 Coffee Street<br>Downtown, NY 20028</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">⏰</div>
+                            <div>
+                                <h3>Hours</h3>
+                                <p>Mon-Fri: 7:00 AM - 8:00 PM<br>Sat-Sun: 8:00 AM - 9:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div>
+                                <h3>Contact</h3>
+                                <p>Phone: (702) 082-4280<br>Email: hello@cafeartisan.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon">☕</span>
+                    <span class="logo-text">Café Artisan</span>
+                </div>
+                <p class="footer-text">&copy; 2024 Café Artisan. All rights reserved. Crafted with love and coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
