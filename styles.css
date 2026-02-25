@@ -611,6 +611,11 @@ body {
     flex-shrink: 0;
 }
 
+.info-icon img {
+    width: 40px;
+    height: 40px;
+}
+
 .info-item h3 {
     font-size: 18px;
     color: var(--dark-color);
